@@ -26,8 +26,6 @@ class WebSocketSwift: NSObject, SRWebSocketDelegate {
     
     var delegate: WebSocketDelegate?
     
-    let RECONNECT_CODE = 1002
-    
     init(channel: WSChannel) {
         self.channel = channel
         InternetConnectionManager.shared.observeInternetConnection()
@@ -82,6 +80,7 @@ class WebSocketSwift: NSObject, SRWebSocketDelegate {
         DispatchQueue.main.asyncAfter(deadline: tryAgainIn) {
             if(self.reconnectCounter <= self.RECONNECT_TIME_MAX) {
                 self.reconnectCounter += 1
+                self.webSocket?.close()
                 self.open()
             }
         }
@@ -90,9 +89,6 @@ class WebSocketSwift: NSObject, SRWebSocketDelegate {
     func webSocket(_ webSocket: SRWebSocket!, didCloseWithCode code: Int, reason: String!, wasClean: Bool) {
         channel.status = .closed
         print("WS (\(channel.channelId)) is closed!")
-        if code == RECONNECT_CODE {
-            self.webSocket?.open()
-        }
     }
     
     // MARK: Notification center

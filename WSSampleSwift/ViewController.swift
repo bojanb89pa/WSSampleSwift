@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var messageLabel: UILabel!
     
     let wsUrl = "ws://echo.websocket.org"
