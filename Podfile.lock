@@ -1,0 +1,15 @@
+PODS:
+  - ReachabilitySwift (3)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - SocketRocket
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 31cde2fb4a05bd1734b21890a8df93286bf65888
+
+COCOAPODS: 1.2.0.rc.1
