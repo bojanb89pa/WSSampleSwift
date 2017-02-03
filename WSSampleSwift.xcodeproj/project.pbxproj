@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		361F59161E4389060096787A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59151E4389060096787A /* AppDelegate.swift */; };
-		361F59181E4389060096787A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59171E4389060096787A /* ViewController.swift */; };
 		361F591B1E4389060096787A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361F59191E4389060096787A /* Main.storyboard */; };
 		361F591D1E4389060096787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361F591C1E4389060096787A /* Assets.xcassets */; };
 		361F59201E4389060096787A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361F591E1E4389060096787A /* LaunchScreen.storyboard */; };
@@ -16,8 +15,10 @@
 		361F59361E4389060096787A /* WSSampleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59351E4389060096787A /* WSSampleSwiftUITests.swift */; };
 		361F59461E4389DB0096787A /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59441E4389DB0096787A /* Channel.swift */; };
 		361F59471E4389DB0096787A /* WebSocketSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59451E4389DB0096787A /* WebSocketSwift.swift */; };
-		361F594A1E438BFD0096787A /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59481E438BFD0096787A /* InternetConnectionManager.swift */; };
-		361F594B1E438BFD0096787A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F59491E438BFD0096787A /* Notifications.swift */; };
+		36D296AD1E447A2F005ED842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D296AC1E447A2F005ED842 /* ViewController.swift */; };
+		36D296B41E447A9B005ED842 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36D296B31E447A9B005ED842 /* Info.plist */; };
+		36D296B71E447AA6005ED842 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D296B61E447AA6005ED842 /* Notifications.swift */; };
+		36D296BA1E447AB5005ED842 /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D296B91E447AB5005ED842 /* InternetConnectionManager.swift */; };
 		AFE77A164D61F57E9B7F8207 /* Pods_WSSampleSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C0C3C707EA4018824B6744 /* Pods_WSSampleSwiftTests.framework */; };
 		B8453135F36AC8E63B90E534 /* Pods_WSSampleSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C78F72F1696D04C2AF6B54 /* Pods_WSSampleSwiftUITests.framework */; };
 		DDEE419E772BD7D801B2D503 /* Pods_WSSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493A2345D92BCB3ED7EBAEF2 /* Pods_WSSampleSwift.framework */; };
@@ -44,11 +45,9 @@
 		0747DB7C6ADAF4DA400AF512 /* Pods-WSSampleSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSSampleSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSSampleSwiftUITests/Pods-WSSampleSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		361F59121E4389060096787A /* WSSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		361F59151E4389060096787A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		361F59171E4389060096787A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		361F591A1E4389060096787A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		361F591C1E4389060096787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		361F591F1E4389060096787A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		361F59211E4389060096787A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		361F59261E4389060096787A /* WSSampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSSampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		361F592A1E4389060096787A /* WSSampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSampleSwiftTests.swift; sourceTree = "<group>"; };
 		361F592C1E4389060096787A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,8 +56,10 @@
 		361F59371E4389060096787A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		361F59441E4389DB0096787A /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		361F59451E4389DB0096787A /* WebSocketSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketSwift.swift; sourceTree = "<group>"; };
-		361F59481E438BFD0096787A /* InternetConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
-		361F59491E438BFD0096787A /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		36D296AC1E447A2F005ED842 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36D296B31E447A9B005ED842 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D296B61E447AA6005ED842 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		36D296B91E447AB5005ED842 /* InternetConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
 		493A2345D92BCB3ED7EBAEF2 /* Pods_WSSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50370B4966540CA3F0032D85 /* Pods-WSSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSSampleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSSampleSwift/Pods-WSSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		782BB2F63A9978575C0B3CC8 /* Pods-WSSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSSampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSSampleSwift/Pods-WSSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,15 +136,15 @@
 		361F59141E4389060096787A /* WSSampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				36D296AB1E447A1F005ED842 /* ViewController */,
+				36D296B81E447AB5005ED842 /* Manager */,
 				361F59431E4389DB0096787A /* WS */,
+				36D296B51E447AA6005ED842 /* Constants */,
 				361F59151E4389060096787A /* AppDelegate.swift */,
-				361F59171E4389060096787A /* ViewController.swift */,
-				361F59481E438BFD0096787A /* InternetConnectionManager.swift */,
-				361F59491E438BFD0096787A /* Notifications.swift */,
 				361F59191E4389060096787A /* Main.storyboard */,
 				361F591C1E4389060096787A /* Assets.xcassets */,
 				361F591E1E4389060096787A /* LaunchScreen.storyboard */,
-				361F59211E4389060096787A /* Info.plist */,
+				36D296B31E447A9B005ED842 /* Info.plist */,
 			);
 			path = WSSampleSwift;
 			sourceTree = "<group>";
@@ -173,6 +174,30 @@
 				361F59451E4389DB0096787A /* WebSocketSwift.swift */,
 			);
 			path = WS;
+			sourceTree = "<group>";
+		};
+		36D296AB1E447A1F005ED842 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				36D296AC1E447A2F005ED842 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		36D296B51E447AA6005ED842 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				36D296B61E447AA6005ED842 /* Notifications.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		36D296B81E447AB5005ED842 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				36D296B91E447AB5005ED842 /* InternetConnectionManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		B853AA085F6833F13CDE62EB /* Frameworks */ = {
@@ -304,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D296B41E447A9B005ED842 /* Info.plist in Resources */,
 				361F59201E4389060096787A /* LaunchScreen.storyboard in Resources */,
 				361F591D1E4389060096787A /* Assets.xcassets in Resources */,
 				361F591B1E4389060096787A /* Main.storyboard in Resources */,
@@ -469,12 +495,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				361F594B1E438BFD0096787A /* Notifications.swift in Sources */,
-				361F59181E4389060096787A /* ViewController.swift in Sources */,
+				36D296BA1E447AB5005ED842 /* InternetConnectionManager.swift in Sources */,
+				36D296B71E447AA6005ED842 /* Notifications.swift in Sources */,
+				36D296AD1E447A2F005ED842 /* ViewController.swift in Sources */,
 				361F59461E4389DB0096787A /* Channel.swift in Sources */,
 				361F59161E4389060096787A /* AppDelegate.swift in Sources */,
 				361F59471E4389DB0096787A /* WebSocketSwift.swift in Sources */,
-				361F594A1E438BFD0096787A /* InternetConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
