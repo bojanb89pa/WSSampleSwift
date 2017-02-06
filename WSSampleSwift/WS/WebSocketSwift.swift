@@ -14,7 +14,7 @@ protocol WebSocketDelegate {
     func messageReceived(_ message: String)
 }
 
-class WebSocketSwift: NSObject, SRWebSocketDelegate {
+class WebSocketSwift: NSObject {
     
     let RECONNECT_TIME_MAX = 15
     
@@ -56,7 +56,20 @@ class WebSocketSwift: NSObject, SRWebSocketDelegate {
         self.webSocket?.send(message)
     }
     
-    // MARK: SRWebSocket Delegate
+    
+    // MARK: Notification center
+    
+    func internetAvailable() {
+        if channel.status == .cancel {
+            open()
+        }
+    }
+    
+}
+
+// MARK: SRWebSocket Delegate
+
+extension WebSocketSwift: SRWebSocketDelegate {
     
     func webSocket(_ webSocket: SRWebSocket!, didReceiveMessage message: Any!){
         debugPrint(message)
@@ -90,13 +103,4 @@ class WebSocketSwift: NSObject, SRWebSocketDelegate {
         channel.status = .closed
         print("WS (\(channel.channelId)) is closed!")
     }
-    
-    // MARK: Notification center
-    
-    func internetAvailable() {
-        if channel.status == .cancel {
-            open()
-        }
-    }
-    
 }
